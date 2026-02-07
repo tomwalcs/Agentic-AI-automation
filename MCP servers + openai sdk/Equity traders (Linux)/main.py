@@ -20,7 +20,7 @@ from pathlib import Path
 PROJECT_ROOT = Path(
     "/mnt/c/Users/twalciszewski/Agentic AI projects/MCP servers + openai sdk/Equity traders"
 )
-LEGACY_DIR = PROJECT_ROOT  # accounts_server.py lives here
+LEGACY_DIR = PROJECT_ROOT  
 
 ###############################################################################
 # In‑house imports                                                            #

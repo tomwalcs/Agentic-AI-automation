@@ -1,4 +1,3 @@
-# accounts_server.py  (lazy-import rewrite)
 from __future__ import annotations
 import importlib
 from mcp.server.fastmcp import FastMCP

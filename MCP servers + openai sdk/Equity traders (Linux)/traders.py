@@ -1,6 +1,6 @@
 """
 traders.py – orchestrates the Researcher-as-tool plus the Trader agent.
-Key points vs the original version:
+Key points:
 • tolerant import of  researcher_mcp_server_params
 • MCPServerStdio gets a longer start-up timeout (20 s, configured in mcp_params)
 """
@@ -33,14 +33,14 @@ try:
         trader_mcp_server_params,
         researcher_mcp_server_params,
     )
-except ImportError:                       # mcp_params exists but missing symbol
+except ImportError:                      
     from mcp_params import trader_mcp_server_params
     researcher_mcp_server_params = []
 
 # ──────────────────────────────────────────────────────────────────────────────
 # 2.  Model plumbing helpers  (unchanged – shortened here for brevity)
 # ──────────────────────────────────────────────────────────────────────────────
-# … [ exactly the same helper-client code you already had ] …
+
 
 def get_model(model_name: str):
     # You may want to adjust this logic to match your needs

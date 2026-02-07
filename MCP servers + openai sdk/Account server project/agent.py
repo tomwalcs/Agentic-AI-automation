@@ -1,6 +1,6 @@
 # agent.py  ──────────────────────────────────────────────────────────────────
 """
-Tiny demo client that talks to the *accounts_server* MCP you already have.
+Tiny demo client that talks to the *accounts_server* MCP.
 
 • Connects via stdio using the legacy `MCPClient` helper (only present in
   mcp ≤ 1.9.2).
@@ -15,10 +15,8 @@ from typing import Any
 from dotenv import load_dotenv
 from openai import AsyncOpenAI
 from agents import Agent, Runner, Tool, OpenAIChatCompletionsModel
-from mcp.client import MCPClient            # ← ONLY exists up to 1.9.2
-
-load_dotenv()                               # loads OPENAI_API_KEY
-
+from mcp.client import MCPClient          
+load_dotenv()                              
 ##############################################################################
 # 1) Build a helper that calls the accounts MCP tool over stdio              #
 ##############################################################################
